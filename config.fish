@@ -21,10 +21,3 @@ end
 function h
   cd ~/$argv
 end
-
-function tab
-  osascript -e "tell application \"Terminal\"" \
-      -e "tell application \"System Events\" to keystroke \"t\" using {command down}" \
-      -e "do script \"cd $PWD \" in front window" \
-      -e "end tell"
-end
