@@ -19,7 +19,7 @@ alias sync "bundle; and rake db:migrate; and rake db:test:prepare"
 alias deploy "git push; and git push heroku master"
 
 function c
-  cd ~/roshan/Code/$argv
+  cd ~/Code/$argv
 end
 
 function h
